@@ -12,6 +12,9 @@ UI界面相关
 http://blog.csdn.net/wuming2016/article/details/60774896   -- 对象管理
 http://blog.csdn.net/mooke/article/details/8882073		   -- 对象系统设计
 http://blog.csdn.net/zhanghefu/article/details/25833535    -- aoi算法
+http://blog.csdn.net/zhanghefu/article/details/26094845    -- 网格aoi
+http://blog.csdn.net/sigh667/article/details/75538269      -- 十字链表aoi
+http://blog.csdn.net/popy007/article/details/8287444/      -- 界面状态管理
 obj
 元素：
 1.挂载场景
