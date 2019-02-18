@@ -1,0 +1,10 @@
+结构体字节对齐方式 参考：https://blog.csdn.net/vblittleboy/article/details/6935165
+c++结构体定义，初始化和引用 参考：https://blog.csdn.net/steft/article/details/54944790
+使用：CspriteFileStruct.h
+
+CCLabel创建方式：
+1.UI树遍历的时候访问了CCLabel.cpp->visit，然后调用->createSpriteForSystemFont向texture传入字符和字体文件
+2.Texture2D-initWithString，获取纹理地址数据，传入->initWithData
+3.使用CCImage定义的纹理数据结构MipmapInfo(地址+长度)，传入Texture2D->initWithMipmaps()
+4.Texture2D->initWithMipmaps(),设置一大堆openGL参数，设置shader
+5.Texture2D->drawAtPoint()绘制
