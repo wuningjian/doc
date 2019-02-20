@@ -56,4 +56,6 @@ GameStateMgr在AppDelegate里添加进scheduleUpdate队列
 =====================Lua 逻辑====================
 1 main.lua->Start() Update()
 2 RenderUnit创建主场景，设置场景层，UI层，飘字层等
-3 GameLoop开始-各种状态切换（各个状态详细看GameLoop->init()）
+3 初始化所有ctrl
+4 GameLoop开始-各种状态切换（各个状态详细看GameLoop->init()）
+5 GameNet
