@@ -58,4 +58,9 @@ GameStateMgr在AppDelegate里添加进scheduleUpdate队列
 2 RenderUnit创建主场景，设置场景层，UI层，飘字层等
 3 初始化所有ctrl
 4 GameLoop开始-各种状态切换（各个状态详细看GameLoop->init()）
-5 GameNet
+5 GameNet 注册所有协议（详见网络连接）
+
+GamePlay
+1.登录成功GameLoop进入login_success状态，然后请求人物数据(包括场景和位置)
+2.GameLoop进入loading状态，根据人物数据开始初始化场景
+2.1.scene执行LoadScene方法，开始加载地图
