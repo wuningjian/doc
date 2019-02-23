@@ -61,6 +61,10 @@ GameStateMgr在AppDelegate里添加进scheduleUpdate队列
 5 GameNet 注册所有协议（详见网络连接）
 
 GamePlay
-1.登录成功GameLoop进入login_success状态，然后请求人物数据(包括场景和位置)
-2.GameLoop进入loading状态，根据人物数据开始初始化场景
-2.1.scene执行LoadScene方法，开始加载地图
+1.登录成功GameLoop状态机进入login_success状态，然后请求人物数据(包括场景和位置)
+2.GameLoop状态机进入loading状态，根据人物数据开始初始化场景
+3.scene执行LoadScene方法，开始加载地图（详见地图）
+4.GameLoop状态机进入play状态，scene执行StartScene()方法
+4.1设置aoi范围
+4.2创建角色，怪物（详见角色）
+4.3设置摄像机跟随
