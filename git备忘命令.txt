@@ -1,5 +1,8 @@
 脑容量不够，字数来凑
 
+##拉取远程分支
+git clone (https url)
+
 git pull
 git add .
 git commit -m "说明"
